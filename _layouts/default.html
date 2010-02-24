@@ -9,19 +9,16 @@
   </head>
   <body id="intro">
     <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='/ruanwz.github.com/'">
+      <div id="header" onclick="javascript:window.location='/'">
         <h1></h1>
       </div>
       <div id="navigation">
         <ul>
           <li id="navi_intro">
-            <a href="/ruanwz.github.com/">Intro</a>
+            <a href="http://github.com/ruanwz/">Intro</a>
           </li>
           <li id="navi_source">
             <a href="http://github.com/ruanwz/ruanwz.github.com">Source</a>
-          </li>
-          <li id="navi_tickets">
-            <a href="http://ruanwz.lighthouseapp.com/projects/TODO/tickets">Tickets</a>
           </li>
         </ul>
       </div>
@@ -31,24 +28,16 @@
         </div>
         <div id="sidebar">
           <div class="item">
-            <!-- Tickets   -->
-            <h4><a href="http://ruanwz.lighthouseapp.com/projects/TODO/tickets">Tickets</a></h4>
-            <p>
-              Found a bug?<br />
-              Request a feature?
-            </p>
-          </div>
-          <div class="item">
             <!-- Blog   -->
             <h4><a href="atom.xml" id="rss_feed" name="rss_feed">Blog Posts</a></h4>
             <p>
               {% for post in site.posts %} 
-                <span>{{ post.date | date_to_string }}</span> » <a href="/ruanwz.github.com{{ post.url }}">{{ post.title }}</a><br>
+                <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}">{{ post.title }}</a><br>
               {% endfor %}
             </p>
           </div>
           <div class="item">
-            <script type="text/javascript" src="http://disqus.com/forums/ruanwz.github.com/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
+            <script type="text/javascript" src="http://disqus.com/forums/ruanwz-github-com/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
           </div>
         </div>
       </div>

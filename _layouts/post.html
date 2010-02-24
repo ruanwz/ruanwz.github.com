@@ -9,7 +9,7 @@
   </head>
   <body id="intro">
     <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='/ruanwz.github.com/'">
+      <div id="header" onclick="javascript:window.location='/'">
         <h1></h1>
       </div>
       <div id="navigation">
@@ -20,17 +20,14 @@
           <li id="navi_source">
             <a href="http://github.com/ruanwz/ruanwz.github.com">Source</a>
           </li>
-          <li id="navi_tickets">
-            <a href="http://ruanwz.lighthouseapp.com/projects/TODO/tickets">Tickets</a>
-          </li>
         </ul>
       </div>
       <div id="page_body">
         <div id="content">
           {{ content }}
                     
-          <script type="text/javascript">var disqus_url = "http://ruanwz.github.com/ruanwz.github.com/{{ post.url }}"; var disqus_title ="{{ post.title }}";</script>
-          <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ruanwz.github.com/embed.js"></script>
+          <script type="text/javascript">var disqus_url = "http://ruanwz.github.com/ruanwz-github-com/{{ post.url }}"; var disqus_title ="{{ post.title }}";</script>
+          <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ruanwz-github-com/embed.js"></script>
           <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
           <script type="text/javascript">
           //<![CDATA[
@@ -42,7 +39,7 @@
           				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
           			}
           		}
-          		document.write('<script type="text/javascript" src="http://disqus.com/forums/ruanwz.github.com/get_num_replies.js' + query + '"></' + 'script>');
+          		document.write('<script type="text/javascript" src="http://disqus.com/forums/ruanwz-github-com/get_num_replies.js' + query + '"></' + 'script>');
           	})();
           //]]>
           </script>
@@ -55,14 +52,6 @@
             <p>Coming soon</p>
           </div>
           <div class="item">
-            <!-- Tickets   -->
-            <h4><a href="http://ruanwz.lighthouseapp.com/projects/TODO/tickets" id="tickets" name="tickets">Tickets</a></h4>
-            <p>
-              Found a bug?<br />
-              Request a feature?
-            </p>
-          </div>
-          <div class="item">
             <!-- Blog   -->
             <a href="../../../atom.xml" id="rss_feed" name="rss_feed">Blog Posts</a>
             <h4>Blog Posts</h4>
@@ -73,7 +62,7 @@
             </p>
           </div>
           <div class="item">
-            <script type="text/javascript" src="http://disqus.com/forums/ruanwz.github.com/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
+            <script type="text/javascript" src="http://disqus.com/forums/ruanwz-github-com/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
           </div>
         </div>
       </div>
