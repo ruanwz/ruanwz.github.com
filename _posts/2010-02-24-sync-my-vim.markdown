@@ -26,3 +26,4 @@ title: 同步我的VIM
 这样一来，在新主机上只需要执行git clone, 然后再把.vimrc放到~/目录下就可以把VIM配置好了。.还有一个好处就是你在某台主机上作了修改，都可以用git push提交到github上，其他主机就可以用git pull同步更新了。
 
 有兴趣的可以参考一下我放在github上的[vimfiles](http://github.com/ruanwz/vimfiles)设置。
+
